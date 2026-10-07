@@ -1,0 +1,812 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    background: #fffaf7;
+
+    color: #3d3430;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+
+    width: 100%;
+
+    padding: 20px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        rgba(255, 250, 247, 0.95);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom:
+        1px solid #f1e4de;
+
+}
+
+
+.logo {
+
+    text-decoration: none;
+
+    color: #3d3430;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+}
+
+
+.logo span {
+
+    color: #b87583;
+
+    font-style: italic;
+
+}
+
+
+.navbar {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+.navbar a {
+
+    text-decoration: none;
+
+    color: #3d3430;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.navbar a:hover {
+
+    color: #b87583;
+
+}
+
+
+.menu-btn {
+
+    display: none;
+
+    border: none;
+
+    background: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 85vh;
+
+    padding: 80px 10%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 30%,
+            #f8dfe4,
+            transparent 25%
+        ),
+
+        #fffaf7;
+
+}
+
+
+.hero-content {
+
+    max-width: 600px;
+
+}
+
+
+.small-title {
+
+    color: #b87583;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(48px, 7vw, 85px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+    font-weight: 500;
+
+}
+
+
+.hero-text {
+
+    max-width: 500px;
+
+    font-size: 18px;
+
+    color: #716660;
+
+    margin-bottom: 30px;
+
+}
+
+
+.main-btn {
+
+    display: inline-block;
+
+    border: none;
+
+    text-decoration: none;
+
+    background: #b87583;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.main-btn:hover {
+
+    background: #965d6a;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.hero-decoration {
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: #f4d6dc;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 100px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(100, 70, 60, 0.12);
+
+}
+
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+
+    padding: 100px 8%;
+
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 650px;
+
+    margin:
+        0 auto 55px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 42px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+
+}
+
+
+.section-heading p {
+
+    color: #716660;
+
+}
+
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+.product-card {
+
+    background: white;
+
+    border:
+        1px solid #f0e3de;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 10px 30px
+        rgba(80, 50, 40, 0.05);
+
+}
+
+
+.product-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 20px 40px
+        rgba(80, 50, 40, 0.10);
+
+}
+
+
+.product-image {
+    height: 250px;
+    background: #f8e8eb;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+
+    padding: 25px;
+
+}
+
+
+.product-info h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.product-info p {
+
+    color: #81756f;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.product-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.product-bottom strong {
+
+    font-size: 20px;
+
+}
+
+
+.order-btn {
+
+    border: none;
+
+    background: #3d3430;
+
+    color: white;
+
+    padding:
+        9px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.order-btn:hover {
+
+    background: #b87583;
+
+}
+
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+    background: #f8e8eb;
+
+}
+
+
+.about-box {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        180px 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+}
+
+
+.about-decoration {
+
+    width: 150px;
+
+    height: 150px;
+
+    background: #fffaf7;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 60px;
+
+    color: #b87583;
+
+}
+
+
+.about h2 {
+
+    font-size: 40px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+
+
+.about p {
+
+    color: #685c57;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* =========================
+   HOW TO ORDER
+========================= */
+
+.steps {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+.step {
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+.step-number {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin:
+        0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #f4d6dc;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #965d6a;
+
+    font-weight: bold;
+
+}
+
+
+.step h3 {
+
+    margin-bottom: 8px;
+
+    font-size: 22px;
+
+}
+
+
+.step p {
+
+    color: #81756f;
+
+}
+
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #3d3430;
+
+    color: white;
+
+}
+
+
+.contact h2 {
+
+    max-width: 650px;
+
+    margin:
+        0 auto 30px;
+
+    font-size: 45px;
+
+    font-weight: 500;
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #2e2724;
+
+    color: #e8ddd8;
+
+}
+
+
+.footer-logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+}
+
+
+footer p {
+
+    font-size: 14px;
+
+}
+
+
+.copyright {
+
+    margin-top: 20px;
+
+    opacity: 0.6;
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+
+    .navbar {
+
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        background: #fffaf7;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        border-bottom:
+            1px solid #f1e4de;
+
+    }
+
+
+    .navbar.active {
+
+        display: flex;
+
+    }
+
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+
+    .hero {
+
+        min-height: auto;
+
+        padding: 70px 7%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+
+    }
+
+
+    .hero-text {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .hero-decoration {
+
+        width: 220px;
+
+        height: 220px;
+
+        font-size: 70px;
+
+    }
+
+
+    .section {
+
+        padding: 75px 7%;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .products {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-box {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+
+    .about-decoration {
+
+        margin: auto;
+
+    }
+
+
+    .about h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .steps {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact h2 {
+
+        font-size: 34px;
+
+    }
+
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rumi made | Made with ♡</title>
+
+    <meta
+        name="description"
+        content="Rumi made - cute handmade crochet creations made with love."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            Rumi <span>made</span>
+        </a>
+
+
+        <nav class="navbar">
+
+            <a href="#home">Home</a>
+
+            <a href="#shop">Shop</a>
+
+            <a href="#about">About</a>
+
+            <a href="#order">How to Order</a>
+
+        </nav>
+
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()"
+        >
+            ☰
+        </button>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                HANDMADE WITH ♡
+            </p>
+
+
+            <h1>
+                Little things,<br>
+                made with love.
+            </h1>
+
+
+            <p class="hero-text">
+
+                Cute handmade crochet pieces created
+                specially for you, one stitch at a time. 🧶
+
+            </p>
+
+
+            <a
+                href="#shop"
+                class="main-btn"
+            >
+                Shop Now ♡
+            </a>
+
+        </div>
+
+
+        <div class="hero-decoration">
+            🧶
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SHOP ================= -->
+
+    <section
+        id="shop"
+        class="section"
+    >
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                OUR COLLECTION
+            </p>
+
+
+            <h2>
+                Made just for you ♡
+            </h2>
+
+
+            <p>
+
+                Handmade pieces that add a little
+                extra cuteness to your everyday life.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="products">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+
+<div class="product-image">
+    <img
+        src="images/bow-clip.jpeg"
+        alt="Rumi Made Crochet Bow Clip"
+    >
+</div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Crochet Bow Clip
+                    </h3>
+
+
+                    <p>
+                        Cute handmade bow hair clip.
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹79
+                        </strong>
+
+
+                        <button
+                            onclick="orderProduct('Crochet Bow Clip', 79)"
+                            class="order-btn"
+                        >
+                            Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <span>🎀</span>
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Mesh Bow Clip
+                    </h3>
+
+
+                    <p>
+Cute mesh clip
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹89
+                        </strong>
+
+
+                        <button
+                            onclick="orderProduct('Mesh Bow', 89)"
+                            class="order-btn"
+                        >
+                            Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+              <div class="product-image">
+    <img
+        src="images/mini-bow-clips.jpeg"
+        alt="Rumi Made Crochet Mini Bow Clip"
+    >
+</div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Crochet Mini Bow Clips
+                    </h3>
+
+
+                    <p>
+                        A pair of cute mini bow clips for a pretty look.
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹49
+                        </strong>
+
+
+                        <button
+                            onclick="orderProduct('Crochet Mini Bow Clips', 49)"
+                            class="order-btn"
+                        >
+                            Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section
+        id="about"
+        class="about section"
+    >
+
+        <div class="about-box">
+
+
+            <div class="about-decoration">
+                ♡
+            </div>
+
+
+            <div>
+
+                <p class="small-title">
+                    ABOUT RUMI MADE
+                </p>
+
+
+                <h2>
+                    A little handmade corner
+                    of the internet.
+                </h2>
+
+
+                <p>
+
+                    Rumi made is a small handmade crochet business
+                    where every piece is carefully crocheted
+                    by hand.
+
+                </p>
+
+
+                <p>
+
+                    From cute bows to personalised keychains,
+                    every creation is made with patience,
+                    creativity and lots of love. 🧶♡
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= HOW TO ORDER ================= -->
+
+    <section
+        id="order"
+        class="section"
+    >
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                EASY PEASY
+            </p>
+
+
+            <h2>
+                How to order ♡
+            </h2>
+
+        </div>
+
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+
+                <h3>
+                    Choose
+                </h3>
+
+
+                <p>
+                    Pick your favourite handmade piece.
+                </p>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+
+                <h3>
+                    Email
+                </h3>
+
+
+                <p>
+
+                    Click the Order button and
+                    send us your order details.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+
+                <h3>
+                    Confirm
+                </h3>
+
+
+                <p>
+
+                    We'll reply to confirm your
+                    colour, design and order.
+
+                </p>
+
+
+		<p>
+
+			Note: Delivery charges may apply!
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact">
+
+        <div>
+
+            <p class="small-title">
+                WANT SOMETHING CUTE?
+            </p>
+
+
+            <h2>
+
+                Let's make something
+                special for you. ♡
+
+            </h2>
+
+
+            <button
+                class="main-btn"
+                onclick="openEmail()"
+            >
+                Email Rumi made ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Rumi made
+        </div>
+
+
+        <p>
+            Handmade with ♡
+        </p>
+
+
+        <p class="copyright">
+            © 2026 Rumi made. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
