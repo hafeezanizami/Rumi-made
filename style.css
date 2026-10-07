@@ -145,13 +145,6 @@ body {
 
     align-items: center;
 
-    background:
-
-        radial-gradient(
-            circle at 80% 30%,
-            #f8dfe4,
-            transparent 25%
-        ),
 
         #fffaf7;
 
